@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dou">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/cmaz"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity android:name=".ui.activity.BuyCarActivity"
+            android:theme="@style/AppThemeActionBar"></activity>
+        <activity android:name=".ui.activity.GoodsRetailActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.ChangeUserInfoActivity" android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.ChangeUserBriefActivity"
+            android:label="修改简介"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.UserInfoActivity"
+            android:label="更多" />
+        <activity android:name=".ui.activity.UserActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.RegisterActivity" android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.VideoPublishActivity"
+            android:label="发布"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.VerifyLogin2Activity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.VerifyLoginActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.LoginActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.UserVideoActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.RecordActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.VideoAlbumActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.VideoCameraActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.TrimVideoActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activity.VideoPreviewActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+        <meta-data
+            android:name="CHANNEL"
+            android:value="${CHANNEL}" />
+    </application>
+
+</manifest>
